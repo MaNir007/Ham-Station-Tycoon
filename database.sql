@@ -1,3 +1,5 @@
+drop database ham_tycoon;
+
 CREATE DATABASE IF NOT EXISTS ham_tycoon CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE ham_tycoon;
 
@@ -30,6 +32,13 @@ CREATE TABLE IF NOT EXISTS shop_items (
 -- Insert some default shop items
 INSERT INTO shop_items (name, type, price, bonus_multiplier, required_class) VALUES
 ('Dipole Antenna', 'Antenna', 100, 1.5, 'Novice'),
-('Yagi Antenna', 'Antenna', 500, 3.0, 'Class P'),
+('Vertical Antenna', 'Antenna', 300, 2.0, 'Novice'),
+('Dual Band Yagi', 'Antenna', 400, 2.5, 'Novice'),
 ('Basic VHF Transceiver', 'Transceiver', 200, 2.0, 'Novice'),
-('Advanced HF Transceiver', 'Transceiver', 1000, 5.0, 'Class A');
+('Yagi Antenna', 'Antenna', 500, 3.0, 'Class P'),
+('Mobile VHF/UHF Station', 'Station', 600, 3.5, 'Class P'),
+('Tube Linear Amplifier 500W', 'Amplifier', 800, 4.0, 'Class P'),
+('Advanced HF Transceiver', 'Transceiver', 1000, 5.0, 'Class A'),
+('Directional Beam Antenna', 'Antenna', 1500, 6.0, 'Class A'),
+('Solid State Linear Amp 1kW', 'Amplifier', 2000, 8.0, 'Class A'),
+('Contest Grade Station', 'Station', 5000, 10.0, 'Class A');

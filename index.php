@@ -14,6 +14,7 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="bg-grid"></div>
     <div class="terminal-container">
         <h1>[ HAM STATION TYCOON ]</h1>
         <p>> Welcome to the ultimate amateur radio simulation.</p>
